@@ -6,17 +6,15 @@ import bodyParser from "body-parser";
 import session from "express-session";
 import MongoStore from "connect-mongo";
 import { uri } from "./models/userModel.js";
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
+
+// console.log(process.env.MONGO_URI);
 
 app.listen(PORT, () => {
   console.log(`App is listening at port ${PORT} !!!!`);
 });
-
-// app.listen(6010, () => {
-//   console.log("App is listneing at port 6010");
-// });
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
