@@ -4,6 +4,7 @@ import userModel from "../models/userModel.js";
 
 class Controller {
   static test_get = (req, res) => {
+    console.log("in test get");
     res.send("From controller to test page");
   };
 

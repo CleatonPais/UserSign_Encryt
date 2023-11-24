@@ -6,7 +6,7 @@ import bodyParser from "body-parser";
 import session from "express-session";
 import MongoStore from "connect-mongo";
 import { uri } from "./models/userModel.js";
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
